@@ -1,0 +1,38 @@
+﻿@model  LojaDeGames.Models.Cliente
+
+
+@{
+    ViewBag.Title = "ClienteResultado";
+}
+
+
+<br />
+<h2>Cliente</h2>
+<fieldset>
+    <legend>Cadastro Cliente</legend>
+
+    <div class="editor-label">Nome do Cliente:</div>
+    <div class="editor-field">@Html.DisplayFor(m => m.ClienteNome)</div> <br />
+
+    <div class="editor-label">CPF do Cliente:</div>
+    <div class="editor-field">@Html.DisplayFor(m => m.ClienteCPF) </div> <br />
+
+    <div class="editor-label">Data de Nascimento do Cliente:</div>
+    <div class="editor-field">@Html.DisplayFor(m => m.ClieDtNasc)</div> <br />
+
+    <div class="editor-label">Email do Cliente:</div>
+    <div class="editor-field">@Html.DisplayFor(m => m.ClienteEmail)</div> <br />
+
+    <div class="editor-label">Número do Celular do Cliente:</div>
+    <div class="editor-field">@Html.DisplayFor(m => m.ClienteCel)</div> <br />
+
+    <div class="editor-label">Endereço do Cliente:</div>
+    <div class="editor-field">@Html.DisplayFor(m => m.ClienteEnd)</div>
+
+
+    <br />
+
+    @Html.ActionLink("Voltar", "Index", "Home")
+
+</fieldset>
+

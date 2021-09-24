@@ -1,0 +1,45 @@
+﻿@model LojaDeGames.Models.Jogo
+
+
+@{
+    ViewBag.Title = "JogoResultado";
+}
+
+
+<br />
+<h2>Jogos</h2>
+<fieldset>
+    <legend>Lista de Jogos</legend>
+
+    <div class="editor-label">Código do Jogo:</div>
+    <div class="editor-field">@Html.DisplayFor(model => model.JogoCod)</div> <br />
+
+    <div class="editor-label">Nome do Jogo:</div>
+    <div class="editor-field">@Html.DisplayFor(model => model.JogoNome) </div> <br />
+
+    <div class="editor-label">Versão do Jogo:</div>
+    <div class="editor-field">@Html.DisplayFor(model => model.JogoVersao) </div> <br />
+
+    <div class="editor-label">Desenvolvedor do Jogo:</div>
+    <div class="editor-field">@Html.DisplayFor(model => model.JogoDesenv)</div> <br />
+
+    <div class="editor-label">Gênero do Jogo:</div>
+    <div class="editor-field">@Html.DisplayFor(model => model.JogoGen)</div> <br />
+
+    <div class="editor-label">Faixa Etária Recomendada:</div>
+    <div class="editor-field">@Html.DisplayFor(model => model.JogoFaixaEt)</div> <br />
+
+    <div class="editor-label">Plataforma do Jogo:</div>
+    <div class="editor-field">@Html.DisplayFor(model => model.JogoPlat)</div> <br />
+
+    <div class="editor-label">Ano de Lançamento do Jogo:</div>
+    <div class="editor-field">@Html.DisplayFor(model => model.JogoAnoLanc)</div> <br />
+
+    <div class="editor-label">Sinopse do Jogo:</div>
+    <div class="editor-field">@Html.DisplayFor(model => model.JogoSinopse)</div>
+
+    <br />
+
+    @Html.ActionLink("Voltar", "Index", "Home")
+
+</fieldset>
